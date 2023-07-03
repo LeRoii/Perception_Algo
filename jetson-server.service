@@ -1,0 +1,14 @@
+[Unit]
+Description=load xdma driver
+
+
+[Service]
+Type=simple
+ExecStart=/etc/jetsonqj/jetson-serverrun.sh
+#Restart=on-failure
+#RestartSec=5s
+
+
+[Install]
+WantedBy=multi-user.target
+
